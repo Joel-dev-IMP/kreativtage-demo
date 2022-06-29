@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html>
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
   <title>Kreativtage Projektverwaltung</title>
 </head>
 
@@ -12,27 +14,29 @@
     <h2 class="row mt-2">Kreativtage Login</h2>
   </div>
 
-  <form class="mt-2" action="https://server1.gymnasium-balingen.de/kreativtage/index.php?section=LOG" method="post">
-    <fieldset class="container">
-      <legend>Einloggen</legend>
-      <br />
+  <div class="container">
+    <form class="mt-2 form" action="https://server1.gymnasium-balingen.de/kreativtage/index.php?section=LOG"
+      method="post">
+      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, porro! Et eos repellendus repudiandae dolores
+        culpa mollitia placeat quis ratione quos atque eveniet ea blanditiis explicabo, tempore ad qui dolor?</div>
       <div class="row mt-2">
-        <div class="column column-md column-lg">Benutzername:</div>
-        <div class="column column-md column-lg"><input type="text" name="username" /></div>
-      </div>
-      <div class="row mt-2">
-        <div class="column column-md column-lg">Passwort:</div>
-        <div class="column column-md column-lg"><input type="password" name="passwort" /></div>
-      </div>
-      <div class="row mt-2">
-        <div class="column column-md column-lg"></div>
-        <div class="column column-md column-lg">
-          <input class="btn" type="submit" name="formaction" value="Einloggen" />
+
+        <div class="input-container input-required">
+          <div class="input-label">Benutzername</div>
+          <input class="form-input" type="text" name="username" required />
         </div>
       </div>
-    </fieldset>
-  </form>
-  <br />
+      <div class="row mt-2">
+
+        <div class="input-container input-required">
+          <div class="input-label">Passwort</div><input class="form-input" type="password" name="passwort" required />
+        </div>
+      </div>
+      <div class="row mt-2 justify-content-end">
+        <button class="btn" type="submit" name="formaction" value="Einloggen">Einloggen</button>
+      </div>
+    </form>
+  </div>
 
   <form action="https://server1.gymnasium-balingen.de/kreativtage/index.php?section=log" method="post">
     <div class="container">
@@ -43,12 +47,12 @@
   </form>
 
   <div id="cookie-banner">
-    <div style="margin-left: 2rem;">
-      <p>Diese Seite benötigt Cookies.</p>
-      <p>
-        Mit der weiteren Nutzung dieser Seite akzeptieren Sie, dass auf ihrem
-        Rechner Cookies abgespeichert und ausgelesen werden
-      </p>
+    <div style="margin-left: 2rem; padding: 0.25rem;">
+      Diese Seite benötigt Cookies.
+
+      Mit der weiteren Nutzung dieser Seite akzeptieren Sie, dass auf Ihrem
+      Rechner Cookies abgespeichert und ausgelesen werden.
+
     </div>
     <div style="margin-right: 2rem;">
       <button class="btn" onclick="document.getElementById('cookie-banner').className = 'hidden';">
@@ -57,130 +61,5 @@
     </div>
   </div>
 </body>
-<style type="text/css">
-  :root {
-    --primary: #5fcc7f;
-    --white: #fff;
-    --black: #000;
-  }
-
-  .container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-  }
-
-  .column {
-    flex: 1 0 0%;
-  }
-
-  @media screen and (min-width: 700px) {
-    .column-md {
-      width: 25%;
-      flex: 0 0 auto;
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    .column-lg {
-      width: 15%;
-      flex: 0 0 auto;
-    }
-  }
-
-  .mt-2 {
-    margin-top: 0.9rem;
-  }
-
-  .btn {
-    background-color: var(--white);
-    width: 10rem;
-    height: 2.5rem;
-    border: 2px solid;
-    border-radius: 6px;
-    cursor: pointer;
-    color: var(--black);
-    transition: transform 0.2s ease;
-  }
-
-  .btn:hover {
-    background-color: var(--primary);
-    border-radius: 6px;
-    color: var(--white);
-    transform: scale(1.05);
-  }
-
-  .btn:active {
-    background-color: var(--primary);
-    border-radius: 6px;
-    color: var(--white);
-    transform: scale(0.95);
-  }
-
-  .hidden {
-    display: none !important;
-  }
-
-  #cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: aliceblue;
-    width: 100%;
-    padding: 0.5rem;
-    z-index: 200;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  input[type="text"],
-  input[type="password"] {
-    border-radius: 6px;
-    border: 2px solid;
-    width: 10rem;
-    height: 1.5rem;
-  }
-
-  input[type="text"],
-  input[type="password"] {
-    border-radius: 6px;
-    border: 2px solid;
-    width: 10rem;
-    height: 1.5rem;
-  }
-
-  input[type="text"]:focus,
-  input[type="password"]:focus {
-    outline: none;
-    border-color: var(--primary);
-  }
-
-  tr {
-    user-select: none;
-    -moz-user-select: none;
-    cursor: pointer;
-  }
-
-  tr:hover {
-    background-color: #e7f4e2;
-  }
-
-  select {
-    /* background-color: rgb(255, 255, 150); */
-    border: none;
-    width: 4rem;
-    height: 2rem;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-</style>
 
 </html>

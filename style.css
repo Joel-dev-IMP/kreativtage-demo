@@ -1,0 +1,171 @@
+:root {
+    --primary: #5fcc7f;
+    --primary-200: #c5edd1;
+    --white: #fff;
+    --grey-900: #393939;
+    --black: #000;
+
+    --success: #5fcc7f;
+    --error: #d03333;
+
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-family: var(--font);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.column {
+    flex: 1 0 0%;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+/* @media screen and (min-width: 700px) {
+    .column-md {
+        width: 25%;
+        flex: 0 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .column-lg {
+        width: 15%;
+        flex: 0 0 auto;
+    }
+} */
+
+.mt-2 {
+    margin-top: 0.9rem;
+}
+
+.btn {
+    color: var(--black);
+    background-color: var(--white);
+
+    width: 10rem;
+    min-height: 2.5rem;
+    padding: 0.25rem;
+
+    /* Border properties */
+    border: 2px solid;
+    border-radius: 6px;
+
+    /* Font properties */
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 6px;
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: var(--primary);
+    border-radius: 6px;
+    color: var(--white);
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none !important;
+}
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-200);
+    width: 100%;
+    padding: 0.5rem;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    border: 2px solid black;
+    padding: 3rem;
+    border-radius: 6px;
+}
+
+
+.input-container {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    height: 2.75rem;
+
+    margin-top: 0.25rem;
+
+
+    border-radius: 6px;
+    border: 2px solid;
+
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.input-label {
+    font-size: 14px;
+    color: var(--grey-900);
+}
+
+.input-required .input-label::after {
+    content: "*";
+    color: var(--error);
+}
+
+.selected {
+    background-color: var(--primary-200);
+}
+
+.selected:hover {
+    background-color: var(--primary-200) !important;
+}
+
+.project-item {
+    user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+}
+
+.project-item:hover {
+    background-color: var(--primary-200);
+}
+
+select {
+    /* background-color: rgb(255, 255, 150); */
+    border: none;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
