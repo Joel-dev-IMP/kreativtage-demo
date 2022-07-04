@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <title>Kreativtage Projektverwaltung</title>
+    <script src="accordion.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Inhalt</h2>
+        <table>
+            <colgroup>
+                <col width="33%">
+                <col width="33%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td align="center">
+                        <form action="index.php?section=Wahl" method="post">
+                            <button class="btn" type="submit" name="formaction" value="Projekt wählen">Projekt
+                                wählen</button>
+                        </form>
+                    </td>
+                    <td align="center"> </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <form action="index.php?section=log" method="post">
+                            <button class="btn" type="submit" name="formaction" value="Logout">Logout</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h2>Projektwahl</h2>
+        <p> Es müssen 5 verschiedene Projekte aus der Liste gewählt und dann der Knopf "Wahl absenden" gedrückt werden!
+            Wenn korrekt gewählt wurde erscheint hier eine Bestätigung.</p>
+    </div>
+
+    <div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 1</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="1"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 2</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="2"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 3</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="3"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 4</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="4"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 5</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="5"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 6</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="6"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 7</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="7"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 8</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="8"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 9</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="9"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 10</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="10"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 11</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="11"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 12</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="12"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 13</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="13"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 14</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="14"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 15</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="15"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 16</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="16"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 17</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="17"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 18</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="18"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 19</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="19"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 20</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="20"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 21</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="21"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 22</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="22"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 23</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="23"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 24</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="24"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 25</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="25"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 26</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="26"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 27</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="27"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 28</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="28"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 29</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="29"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 30</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="30"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 31</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="31"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 32</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="32"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 33</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="33"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 34</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="34"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-item-header">Projekt 35</div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">Franz jagt im komplett verwahrlosten Taxi quer durch
+                        Bayern. Franziska würde ähnlich verrückt durch die gegend Rasen, wenn ihr Taxibetreiber geöffnet
+                        hätte.</div>
+                    <div class="row justify-content-end"><button class="btn m-1" data-value="35"
+                            onclick="testtwo(this);">Auswählen</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form class="container" action="index.php?section=Wahl" method="post">
+        <div id="selected-projects-container"></div>
+        <!-- <button class="btn" type="submit" name="formaction" value="1">Wahl absenden</button> -->
+    </form>
+
+
+</body>
+
+</html>
