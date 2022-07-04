@@ -8,6 +8,7 @@ function testtwo(t) {
     if (selectedProjects.find(i => i == value)) {
         selectedProjects.splice(selectedProjects.indexOf(value), 1)
         t.parentElement.parentElement.parentElement.classList.remove("selected")
+        t.innerText = "Auswählen"
         // console.log(selectedProjects)
         selectedProjectsList()
         return
@@ -18,6 +19,7 @@ function testtwo(t) {
         // console.log(value)
         selectedProjects.push(value)
         t.parentElement.parentElement.parentElement.classList.add("selected")
+        t.innerText = "Auswahl aufheben"
         console.log(selectedProjects)
         selectedProjectsList()
     }
