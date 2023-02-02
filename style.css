@@ -178,3 +178,19 @@ select {
     width: 2.5rem;
 }
 
+
+/* UTILITIES */
+.hidden {
+    display: none !important;
+}
+
+.error {
+    color: var(--error, red);
+}
+
+.separator-line {
+    width: 100%;
+    height: 1px;
+    background-color: #d8dee4;
+    margin: 0.5rem auto;
+}
