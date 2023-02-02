@@ -61,7 +61,7 @@
     background-color: var(--white);
 
     width: 10rem;
-    min-height: 2.5rem;
+    min-height: 2.75rem;
     padding: 0.25rem;
 
     /* Border properties */
@@ -76,6 +76,13 @@
     cursor: pointer;
     transition: transform 0.2s ease;
 }
+
+@media screen and (max-width: 700px) {
+    .btn {
+        width: 100%;
+    }
+}
+
 
 .btn:hover {
     background-color: var(--primary);
@@ -122,6 +129,8 @@
 
 .form-input {
     width: 100%;
+    width: -webkit-fill-available;
+    width: -moz-available;
     height: 2.75rem;
 
     margin-top: 0.25rem;
@@ -142,9 +151,15 @@
     color: var(--grey-900);
 }
 
-.input-required .input-label::after {
+.input-required .input-label::after,
+.required::after {
     content: "*";
-    color: var(--error);
+    color: var(--error, red);
+}
+
+input:required + label::after,
+textarea:required + label::after {
+    content: "*";
 }
 
 .selected {
