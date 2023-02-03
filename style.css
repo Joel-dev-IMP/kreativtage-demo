@@ -220,8 +220,14 @@ input[type="number"].form-input::-webkit-outer-spin-button {
 }
 
 .input-label {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--grey-900);
+}
+
+.input-hint {
+  font-size: 12px;
+  color: var(--grey-600);
+  /* margin-bottom: 0.5rem; */
 }
 
 .input-required .input-label::after,
