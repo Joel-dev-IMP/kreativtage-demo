@@ -240,7 +240,7 @@ input[type="number"].form-input::-webkit-outer-spin-button {
 
 .form-input:focus {
   outline: none;
-  border-color: var(--primary);
+  border-color: var(--secondary);
 }
 
 .input-label {
@@ -301,6 +301,23 @@ select {
   padding: 2rem 0;
   /* margin: 1rem 0; */
   border: 1px solid var(--error);
+}
+
+.signup-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .signup-buttons-container {
+    flex-direction: column-reverse;
+  }
+
+  .signup-buttons-save {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 /* UTILITIES */
