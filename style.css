@@ -137,6 +137,23 @@
   transform: scale(0.95);
 }
 
+.btn-link,
+.btn-link:hover {
+  background: none;
+  color: var(--black);
+
+  border: 0;
+  border-radius: 0;
+
+  padding: 0;
+
+  width: fit-content;
+  min-height: unset;
+  height: auto;
+
+  transform: none;
+}
+
 .hidden {
   display: none !important;
 }
