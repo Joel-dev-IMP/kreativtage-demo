@@ -272,6 +272,12 @@ select {
   width: 2.5rem;
 }
 
+.error-message {
+  background-color: rgba(var(--error-rgb), 0.1);
+  padding: 2rem 0;
+  /* margin: 1rem 0; */
+  border: 1px solid var(--error);
+}
 
 /* UTILITIES */
 .hidden {
