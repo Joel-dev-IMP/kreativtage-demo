@@ -291,6 +291,6 @@ select {
 .separator-line {
   width: 100%;
   height: 1px;
-  background-color: #d8dee4;
+  background-color: var(--grey-100);
   margin: 0.5rem auto;
 }
