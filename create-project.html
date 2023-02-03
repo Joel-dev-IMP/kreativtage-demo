@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <title>Kreativtage Projektverwaltung</title>
+    <link rel="stylesheet" href="accordion.css" />
+    <script src="accordion.js" defer=""></script>
+    <script src="create-project.js" defer=""></script>
+</head>
+
+<body>
+    <nav>
+        <div style="margin: 3px 0">
+            <a href="/index.php?section=LOG">Start</a>
+            <a href="https://www.gymnasium-balingen.de/" target="_blank" rel="noopener noreferrer">Homepage</a>
+        </div>
+        <div>
+            <form action="index.php?section=log" method="post">
+                <button class="btn btn-link" type="submit" name="formaction">
+                    Logout
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="row">Inhalt</h2>
+        <form action="index.php?section=AS" method="post">
+            <button class="btn btn-link" type="submit" name="formaction">
+                Projekt eingeben / bearbeiten
+            </button>
+        </form>
+    </div>
+    <div class="container">
+        <h1 class="row mt-2">Projektanmeldung Schüler</h1>
+
+        <p>
+            Die Eingaben werden wenn man auf "Speichern" drückt gespeichert. Die
+            Projektdaten können im Anschluss noch vervollständigt und angepasst
+            werden. Drückt man auf "Absenden" werden die Projektdaten gespeichert
+            und das Projekt von einem Moderator genemigt. Sollte das Projekt nicht
+            genemigt werden können, wirst du per Mail benachrichtigt, sofern eine
+            gültige Adresse angegeben ist.
+        </p>
+        <p>
+            Pflichtfelder sind mit einem Sternchen markiert und müssen ausgefüllt
+            sein um ein Projekt anzumelden.
+        </p>
+
+        <form action="index.php?section=as" method="post">
+            <!-- Projektleiter -->
+            <div>
+                <h2>Persönliche Daten der Projektleiter</h2>
+                <div class="accordion-item">
+                    <div class="header">
+                        <div class="required">Leiter 1</div>
+                    </div>
+                    <div class="body">
+                        <div class="content" id="leiter1">
+                            <!-- Vorname -->
+                            <label class="required input-label" for="vLeiter1">Vorname</label>
+                            <input class="form-input mb-2" type="text" name="VLeiter1" id="vLeiter1" value=""
+                                required="" />
+
+                            <!-- Nachname -->
+                            <label class="required input-label" for="nLeiter1">Name</label>
+                            <input class="form-input mb-2" type="text" name="NLeiter1" id="nLeiter1" value="User7"
+                                required="" />
+
+                            <div class="row">
+                                <div class="column-6">
+                                    <!-- Stufe -->
+                                    <label class="input-label" for="sLeiter1">Stufe</label>
+                                    <select class="form-input mb-2" name="SLeiter1" id="sLeiter1">
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option selected="selected">11</option>
+                                    </select>
+                                </div>
+                                <div class="column-6" style="margin-left: 1rem">
+                                    <!-- Klasse (a, b, c, d, e, ...) -->
+                                    <label class="input-label" for="kLeiter1">Klasse</label>
+                                    <select class="form-input mb-2" name="KLeiter1" id="kLeiter1">
+                                        <option>a</option>
+                                        <option>b</option>
+                                        <option selected="selected">c</option>
+                                        <option>d</option>
+                                        <option>e</option>
+                                        <option>f</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- E-Mail Adresse -->
+                            <label class="input-label" for="mLeiter1">E-Mail</label>
+                            <input class="form-input mb-2" type="email" name="MLeiter1" id="mLeiter1" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="header">
+                        <div>Leiter 2</div>
+                    </div>
+                    <div class="body">
+                        <div class="content" id="leiter2">
+                            <!-- Vorname -->
+                            <label class="input-label" for="vLeiter2">Vorname</label>
+                            <input class="form-input mb-2" type="text" name="VLeiter2" id="vLeiter2" value="" />
+
+                            <!-- Nachname -->
+                            <label class="input-label" for="nLeiter2">Name</label>
+                            <input class="form-input mb-2" type="text" name="NLeiter2" id="nLeiter2"
+                                value="User Wasauchimmer" />
+
+                            <div class="row">
+                                <div class="column-6">
+                                    <!-- Stufe -->
+                                    <label class="input-label" for="sLeiter2">Stufe</label>
+                                    <select class="form-input mb-2" name="SLeiter2" id="sLeiter2">
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option selected="selected">11</option>
+                                    </select>
+                                </div>
+                                <div class="column-6" style="margin-left: 1rem">
+                                    <!-- Klasse (a, b, c, d, e, ...) -->
+                                    <label class="input-label" for="kLeiter2">Klasse</label>
+                                    <select class="form-input mb-2" name="KLeiter2" id="kLeiter2">
+                                        <option selected="selected">a</option>
+                                        <option>b</option>
+                                        <option>c</option>
+                                        <option>d</option>
+                                        <option>e</option>
+                                        <option>f</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- E-Mail Adresse -->
+                            <label class="input-label" for="mLeiter2">E-Mail</label>
+                            <input class="form-input mb-2" type="email" name="MLeiter2" id="mLeiter2" value="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator-line"></div>
+
+            <!-- Projektdaten -->
+            <div>
+                <h2>Projektdaten eingeben</h2>
+
+                <!-- Projekttitel -->
+                <div>
+                    <label class="input-label required" for="pTitel">Projekttitel</label>
+
+                    <input class="form-input mb-2" type="text" name="PTitel" id="pTitel" value="" required="" />
+                </div>
+
+                <!-- Projektbeschreibung -->
+                <div>
+                    <label class="input-label required" for="pBeschreib">Projektbeschreibung</label>
+                    <div class="input-hint">
+                        Ein möglichst aussagekräftiger kurzer Text, der euren Teilnehmern
+                        sagt, was ihr vorhabt.
+                    </div>
+
+                    <textarea class="form-input mb-2" name="PBeschreib" id="pBeschreib" required="">
+</textarea>
+                </div>
+
+                <!-- Stufe min/max -->
+                <div>
+                    <label class="input-label">Klassenstufen</label>
+
+                    <div class="input-hint">
+                        Bitte gebt an, für welche Klassenstufen ihr euer Projekt anbietet.
+                    </div>
+
+                    <label class="input-hint" for="stufeMin">ab Stufe</label>
+                    <select class="form-input mb-2" name="StufeMin" id="stufeMin">
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option selected="selected">9</option>
+                        <option>10</option>
+                        <option>11</option>
+                    </select>
+
+                    <label class="input-hint" for="stufeMax">bis Stufe</label>
+                    <select class="form-input mb-2" name="StufeMax" id="stufeMax">
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option selected="selected">11</option>
+                    </select>
+                </div>
+
+                <!-- Teilnehmer min/max -->
+                <div>
+                    <label class="input-label">Teilnehmeranzahl</label>
+                    <div class="input-hint">
+                        Bitte gebt im Folgenden an, wie viele Teilnehmer ihr zu eurem
+                        Projekt zulassen wollt. Als minimale Teilnehmeranzahl müsst ihr
+                        <b>mindestens 5</b> eintragen, als maximale Teilnehmeranzahl
+                        <b>mindestens 7 und maximal 25.</b>
+                    </div>
+
+                    <label class="input-hint" for="teilMin">Minimale Teilnehmeranzahl <b>(mindestens 5)</b></label>
+                    <input class="form-input mb-2" type="number" name="TeilMin" id="teilMin" min="5" max="25" value="7"
+                        onchange="setValue(this);" />
+
+                    <label class="input-hint" for="teilMax">Maximale Teilnehmeranzahl
+                        <b>(mindestens 7, maximal 25)</b></label>
+                    <input class="form-input mb-2" type="number" name="TeilMax" id="teilMax" min="7" max="25" value="15"
+                        onchange="setValue(this);" />
+                </div>
+
+                <!-- Beschreibung lang -->
+                <div>
+                    <label class="input-label required" for="pBLang">Ausführliche Projektbeschreibung</label>
+                    <div class="input-hint">
+                        Eine Beschreibung für die Moderatoren, was ihr geplant habt.
+                        Anhand dieses Textes werden die Projekte genemigt bzw. abgelehnt.
+                    </div>
+
+                    <textarea class="form-input mb-2" name="PBeschreib_lang" id="pBLang" required="">
+</textarea>
+                </div>
+
+                <!-- Zeitfenster -->
+                <div>
+                    <label class="input-label">Zeitfenster</label>
+                    <div class="input-hint">
+                        <b>Wichtig: </b>
+                        Ihr solltet <b>an zwei Tagen</b> für jeweils
+                        <b>vier Stunden Programm</b> haben!
+                    </div>
+                    <div class="input-hint">
+                        Ein ganzer Tag ist nur mit einer <b>guten</b> Begründung (bitte im
+                        Feld "Bemerkungen" eintragen) möglich.
+                    </div>
+                    <div class="mt-2">
+                        <input class="mb-2" type="radio" name="Zeitfenster" id="zeitfenster2" value="2"
+                            checked="checked" />
+                        <label for="zeitfenster2">zwei halbe Tage</label>
+                        <br />
+
+                        <input class="mb-3" type="radio" name="Zeitfenster" id="zeitfenster1" value="1" />
+                        <label for="zeitfenster1">ein ganzer Tag</label>
+                    </div>
+                </div>
+
+                <!-- Projektpate -->
+                <div>
+                    <label class="input-label required" for="pate">Projektpate</label>
+                    <div class="input-hint">
+                        Jedes Schülerprojekt benötigt einen <b>Paten</b> (Lehrer/in oder
+                        Eltern). Der Pate hilft den Projektleitern bei der Organisation
+                        und übernimmt wärend den Kreativtagen die Aufsicht.
+                    </div>
+                    <div class="input-hint">
+                        Bei <b>Sportprojekten</b> muss der Projektpate ein
+                        <b>Sportlehrer</b> sein.
+                    </div>
+                    <div class="input-hint">
+                        Sollte der Pate kein Lehrer sein, muss im Feld "Bemerkungen" eine
+                        Kontaktmöglichkeit für den Paten angegeben werden.
+                    </div>
+
+                    <input class="form-input mb-2" type="text" name="Pate" id="pate" required="" value="" />
+                </div>
+
+                <!-- Bemerkungen -->
+                <div>
+                    <label class="input-label" for="bemerkung">Bemerkungen</label>
+                    <div class="input-hint">
+                        Sonstige Bemerkungen (z.B. besondere Raumwünsche, voraussichtliche
+                        Kosten, besondere Teilnahmebedingungen, eigener Computer, etc.)
+                    </div>
+
+                    <textarea class="form-input" name="Bemerkung" id="bemerkung"></textarea>
+                </div>
+
+                <input type="hidden" name="Dateneingabe" value="1" />
+                <input type="hidden" name="SLE" value="1" />
+            </div>
+
+            <div class="separator-line"></div>
+
+            <!-- Zertifizierung -->
+            <div>
+                <h2 class="mb-2">Zertifizierung als Kreativtagementor (optional)</h2>
+                <div>
+                    Um ein Zertifikat zu erhalten muss man in zwei Schuljahren als
+                    Projektleiter an den Kreativtagen teilnehmen.
+                </div>
+                <div class="mb-2">
+                    Ich habe in den letzten Jahren schon ein Projekt geleitet:
+                </div>
+
+                <div class="accordion-item">
+                    <div class="header">Leiter 1</div>
+                    <div class="body">
+                        <div class="content">
+                            <div class="mb-2">
+                                <label class="input-label" for="zertSJ1">Schuljahr</label>
+                                <select class="form-input" name="ZertSJ1" id="zertSJ1">
+                                    <option value="" selected="selected" hidden="">
+                                        Bitte auswählen
+                                    </option>
+
+                                    <option value="2021/22">2021/22 (10. Klasse)</option>
+
+                                    <option value="2018/19">2018/19 (7. Klasse)</option>
+
+                                    <option value="2017/18">2017/18 (6. Klasse)</option>
+
+                                    <option value="2016/17">2016/17 (5. Klasse)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="input-label" for="zertProjekt1">Projekttitel</label>
+                                <input class="form-input" type="text" name="ZertProjekt1" id="zertProjekt1" value="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="header">Leiter 2</div>
+                    <div class="body">
+                        <div class="content">
+                            <div class="mb-2">
+                                <label class="input-label" for="zertSJ2">Schuljahr</label>
+                                <select class="form-input" name="ZertSJ2" id="zertSJ2">
+                                    <option value="" selected="selected" hidden="">
+                                        Bitte auswählen
+                                    </option>
+
+                                    <option value="2021/22">2021/22 (10. Klasse)</option>
+
+                                    <option value="2018/19">2018/19 (7. Klasse)</option>
+
+                                    <option value="2017/18">2017/18 (6. Klasse)</option>
+
+                                    <option value="2016/17">2016/17 (5. Klasse)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="input-label" for="zertProjekt2">Projekttitel</label>
+                                <input class="form-input" type="text" name="ZertProjekt2" id="zertProjekt2" value="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="signup-buttons-container mb-4">
+                <button class="btn btn-danger mb-2" type="submit" name="formaction" value="0">
+                    Löschen
+                </button>
+
+                <div class="signup-buttons-save">
+                    <button class="btn btn-secondary mb-2" type="submit" name="formaction" value="2">
+                        Speichern
+                    </button>
+                    <button class="btn btn-primary mb-2" type="submit" name="formaction" value="1">
+                        Absenden
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

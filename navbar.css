@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+  margin: -8px;
+  margin-bottom: 1rem;
+
+  /* background-color: var(--primary); */
+  border-bottom: 8px solid var(--primary);
+}
+
+nav a,
+nav .btn {
+  color: var(--black);
+  text-decoration: none;
+
+  margin: auto 1rem;
+
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+nav a:hover,
+nav .btn:hover {
+  border-bottom: 3px solid var(--link-underline);
+}
