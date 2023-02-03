@@ -86,12 +86,24 @@
   margin-top: 0.9rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.45rem;
+}
+
 .mb-2 {
   margin-bottom: 0.9rem;
 }
 
+.mb-3 {
+  margin-bottom: 1.8rem;
+}
+
+.mb-4 {
+  margin-bottom: 2.7rem;
+}
+
 .m-1 {
-  margin: 0.5rem;
+  margin: 0.45rem;
 }
 
 .btn {
