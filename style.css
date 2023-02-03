@@ -148,6 +148,24 @@
   transform: scale(0.95);
 }
 
+.btn.btn-danger {
+  background-color: var(--error);
+  border-color: var(--error);
+  color: var(--white);
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+  color: var(--black);
+  border-color: var(--primary);
+}
+
+.btn.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--white);
+}
+
 .btn-link,
 .btn-link:hover {
   background: none;
