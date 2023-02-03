@@ -66,7 +66,8 @@
   justify-content: end;
 }
 
-/* @media screen and (min-width: 700px) {
+/* 
+@media screen and (min-width: 700px) {
     .column-md {
         width: 25%;
         flex: 0 0 auto;
@@ -78,10 +79,15 @@
         width: 15%;
         flex: 0 0 auto;
     }
-} */
+}
+*/
 
 .mt-2 {
   margin-top: 0.9rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.9rem;
 }
 
 .m-1 {
