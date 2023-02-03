@@ -188,12 +188,30 @@
   width: -moz-available;
   height: 2.75rem;
 
-  margin-top: 0.25rem;
-
+  margin-top: 0.5rem;
+  padding-left: 8px;
 
   border-radius: 6px;
   border: 2px solid;
 
+  background: none;
+}
+
+textarea.form-input {
+  padding-top: 8px;
+  height: 10rem;
+  resize: vertical;
+}
+
+input[type="number"].form-input {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"].form-input::-webkit-inner-spin-button,
+input[type="number"].form-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 .form-input:focus {
