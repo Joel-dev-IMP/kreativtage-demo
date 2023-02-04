@@ -34,7 +34,9 @@
 
   font-family: var(--font);
 }
+/* ------------------------------------------------------------------------------ */
 
+/* Layout-Klassen */
 .container {
   width: 90%;
   margin: auto;
@@ -62,6 +64,10 @@
   flex: 0.5 0 0%;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .justify-content-end {
   justify-content: end;
 }
@@ -81,7 +87,9 @@
     }
 }
 */
+/* ------------------------------------------------------------------------------ */
 
+/* Spacing-Klassen */
 .mt-2 {
   margin-top: 0.9rem;
 }
@@ -105,7 +113,9 @@
 .m-1 {
   margin: 0.45rem;
 }
+/* ------------------------------------------------------------------------------ */
 
+/* Button-Klassen */
 .btn {
   color: var(--black);
   background-color: var(--white);
@@ -148,6 +158,10 @@
   transform: scale(0.95);
 }
 
+.btn-small {
+  width: 2.5rem;
+}
+
 .btn.btn-danger {
   background-color: var(--error);
   border-color: var(--error);
@@ -182,20 +196,9 @@
 
   transform: none;
 }
+/* ------------------------------------------------------------------------------ */
 
-#cookie-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: var(--primary-200);
-  width: 100%;
-  padding: 0.5rem;
-  z-index: 200;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
+/* Klassen für inputs, labels und forms */
 .form {
   border: 2px solid black;
   padding: 3rem;
@@ -251,7 +254,6 @@ input[type="number"].form-input::-webkit-outer-spin-button {
 .input-hint {
   font-size: 12px;
   color: var(--grey-600);
-  /* margin-bottom: 0.5rem; */
 }
 
 .input-required .input-label::after,
@@ -260,10 +262,26 @@ input[type="number"].form-input::-webkit-outer-spin-button {
   color: var(--error, red);
 }
 
-input:required+label::after,
-textarea:required+label::after {
+input:required + label::after,
+textarea:required + label::after {
   content: "*";
 }
+/* ------------------------------------------------------------------------------ */
+
+/* Cookie-Banner Styling für die Hauptklasse */
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-200);
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ------------------------------------------------------------------------------ */
 
 .selected {
   background-color: var(--primary-200) !important;
@@ -292,17 +310,15 @@ select {
   cursor: pointer;
 }
 
-.btn-small {
-  width: 2.5rem;
-}
-
+/* Styling für die Fehlerbenachrichtigung */
 .error-message {
   background-color: rgba(var(--error-rgb), 0.1);
   padding: 2rem 0;
-  /* margin: 1rem 0; */
   border: 1px solid var(--error);
 }
+/* ------------------------------------------------------------------------------ */
 
+/* Styling für die Buttons am unteren Ende der Projektanmeldeseite */
 .signup-buttons-container {
   display: flex;
   align-items: center;
@@ -319,6 +335,7 @@ select {
     margin-bottom: 1rem;
   }
 }
+/* ------------------------------------------------------------------------------ */
 
 /* UTILITIES */
 .hidden {

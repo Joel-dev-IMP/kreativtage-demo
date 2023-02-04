@@ -1,0 +1,58 @@
+/*
+  CSS für Drag-and-Drop-Elemente
+  (C) 2023 Joel Benkwitz
+*/
+
+/* body {
+  margin: 0;
+} */
+
+.drag-container {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.drag-container:not(:empty) {
+    border: 2px solid var(--black);
+    border-radius: 0.5rem;
+}
+
+.dragging-container {
+    touch-action: none;
+    user-select: none;
+    cursor: grabbing;
+}
+
+.draggable {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid black;
+    cursor: grab;
+    max-width: calc(var(--drag-container-scroll-width) - 4px - 2rem - 2rem);
+    /* 2rem von el.scrollWidth abziehen, um padding von .drag-container zu berücksichtigen. */
+    margin: 1rem auto;
+    transition: none;
+    /* transition: transform 0.2s ease; */
+}
+
+.draggable.dragging {
+    left: 0;
+    top: 0;
+    margin: 0;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    transition: none;
+    cursor: grabbing;
+}
+
+.transition {
+    transition: transform 0.2s ease;
+}
+
+/* .no-transition {
+    transition: none;
+  } */
