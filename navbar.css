@@ -1,3 +1,6 @@
+/* Die Navbar nutzt CSS Flexbox zur Anordnung der Links, hat einen margin von -8,
+ * um den margin von body auszugleichen und einen bottom-margin von 1rem,
+ * um ausreichend Abstand zum Seiteninhalt zu haben. */
 nav {
   display: flex;
   justify-content: space-between;
@@ -11,6 +14,7 @@ nav {
   border-bottom: 8px solid var(--primary);
 }
 
+/* Links werden, wie auf der Hauptseite des Gymnasium Balingen, in Großbuchstaben geschrieben, Schriftfarbe schwarz. */
 nav a,
 nav .btn {
   color: var(--black);
@@ -22,6 +26,7 @@ nav .btn {
   text-transform: uppercase;
 }
 
+/* Links werden, wenn gehovert, ähnlich wie auf der Hauptseite, grün unterstrichen. */
 nav a:hover,
 nav .btn:hover {
   border-bottom: 3px solid var(--link-underline);
